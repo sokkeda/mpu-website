@@ -32,7 +32,8 @@ body {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   clear: both;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-y: overlay;
   z-index: 0;
   overflow-wrap: break-word;
   word-wrap: break-word;
