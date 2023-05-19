@@ -1,0 +1,36 @@
+@use "../01-settings" as *;
+
+.button {
+  --color-button: var(--color-white);
+  --bg-button: var(--color-secondary);
+
+  padding: var(--space-xs) var(--space-s);
+  border: 2px solid var(--bg-button);
+  border-radius: 3px;
+  background: var(--bg-button);
+  color: var(--color-button);
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  width: max-content;
+  cursor: pointer;
+
+  &:hover {
+    --color-button: var(--color-secondary);
+    --bg-button: var(--color-green-light);
+
+    border-color: var(--color-secondary);
+  }
+
+  &--ghost {
+    --color-button: var(--color-secondary);
+    --bg-button: transparent;
+
+    border-color: var(--color-secondary);
+
+    &:hover {
+      --color-button: var(--color-white);
+      --bg-button: var(--color-secondary);
+    }
+  }
+}

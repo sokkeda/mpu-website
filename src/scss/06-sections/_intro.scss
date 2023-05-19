@@ -1,0 +1,8 @@
+@use "../01-settings" as *;
+
+.section--intro {
+  .bubble:after {
+    right: 0;
+    top: 50%;
+  }
+}

@@ -1,0 +1,6 @@
+@use "../01-settings" as *;
+
+ul {
+  margin-bottom: var(--space-s) !important;
+  padding-left: 20px !important;
+}

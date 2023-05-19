@@ -1,0 +1,158 @@
+@use "../01-settings" as *;
+
+/* Typography */
+body {
+  font-family: var(--font-base);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.p, p, li, form {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--color-text);
+
+  > a, span, b, strong {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  & + * {
+    margin-top: var(--space-s);
+  }
+
+  & + .h1,
+  & + .h2,
+  & + .h3,
+  & + .h4,
+  & + .h5,
+  & + .h6 {
+    margin-top: var(--space-m);
+  }
+}
+
+a:not(.button) {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--color-secondary);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: var(--color-headlines);
+  margin: 0;
+}
+
+.h1 {
+  font-size: 64px;
+  margin-bottom: var(--space-m);
+  font-weight: bold;
+
+  @media (max-width: $l) {
+    font-size: 56px;
+  }
+  @media (max-width: $m) {
+    font-size: 48px;
+  }
+  @media (max-width: $s) {
+    font-size: 38px;
+  }
+}
+
+.h2 {
+  font-size: 48px;
+  margin-bottom: var(--space-m);
+  font-weight: bold;
+
+  @media (max-width: $l) {
+    font-size: 42px;
+  }
+  @media (max-width: $m) {
+    font-size: 36px;
+  }
+  @media (max-width: $s) {
+    font-size: 32px;
+  }
+}
+
+.h3 {
+  font-size: 36px;
+  margin-bottom: var(--space-m);
+  font-weight: bold;
+
+  @media (max-width: $l) {
+    font-size: 32px;
+  }
+  @media (max-width: $m) {
+    font-size: 28px;
+  }
+}
+
+.h4 {
+  font-size: 32px;
+  margin-bottom: var(--space-s);
+  color: var(--color-secondary);
+
+  @media (max-width: $m) {
+    font-size: 28px;
+  }
+  @media (max-width: $s) {
+    font-size: 26px;
+  }
+}
+
+.h5 {
+  font-size: 24px;
+  margin-bottom: var(--space-xs);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @media (max-width: $m) {
+    font-size: 22px;
+  }
+  @media (max-width: $s) {
+    font-size: 20px;
+  }
+}
+
+.h6 {
+  font-size: 20px;
+  margin-bottom: var(--space-xs);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+blockquote {
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--color-white);
+  font-weight: bold;
+  padding: var(--space-m);
+}
+
+strong {
+  color: var(--color-secondary);
+}
+
+.inverted {
+  .h1, .h2, .h3, p, li, a, span, b, form {
+    color: var(--color-white);
+  }
+
+  a:not(.button) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li::marker {
+    color: var(--color-white);
+  }
+}

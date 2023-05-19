@@ -1,0 +1,154 @@
+@use "../01-settings" as *;
+
+/* Layout */
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  @media (min-width: $l) {
+    padding-top: 79px;
+  }
+}
+
+.section {
+  position: relative;
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+  margin-bottom: 64px;
+
+  @media (max-width: $m) {
+    margin-bottom: 0;
+  }
+
+  &[class*="bg-"] {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+  }
+}
+
+[class*="bg-"] {
+  padding: var(--space-m);
+  border-radius: var(--space-xs);
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-width-mobile);
+
+  @media (min-width: $l) {
+    flex-direction: row;
+    gap: var(--grid-gap-width);
+  }
+
+  &--50,
+  &--75 {
+    justify-content: center;
+  }
+
+  &--50 {
+    > div {
+      @media (min-width: $l) {
+        width: 50%;
+      }
+    }
+  }
+
+  &--75 {
+    > div {
+      @media (min-width: $l) {
+        width: 75%;
+      }
+    }
+  }
+
+  &--50-50 {
+    > div {
+      @media (min-width: $l) {
+        width: 50%;
+      }
+    }
+  }
+
+  &--75-25 {
+    > div:first-of-type {
+      @media (min-width: $l) {
+        width: calc(100% / 3 * 2);
+      }
+      @media (min-width: $xl) {
+        width: 75%;
+      }
+    }
+
+    > div:nth-of-type(2) {
+      @media (min-width: $l) {
+        width: calc(100% / 3);
+      }
+      @media (min-width: $xl) {
+        width: 25%;
+      }
+    }
+  }
+
+  &--25-75 {
+    > div:first-of-type {
+      @media (min-width: $l) {
+        width: calc(100% / 3);
+      }
+      @media (min-width: $xl) {
+        width: 25%;
+      }
+    }
+
+    > div:nth-of-type(2) {
+      @media (min-width: $l) {
+        width: calc(100% / 3 * 2);
+      }
+      @media (min-width: $xl) {
+        width: 75%;
+      }
+    }
+  }
+
+  &--66-33 {
+    > div:first-of-type {
+      @media (min-width: $l) {
+        width: calc(100% / 3 * 2);
+      }
+    }
+
+    > div:nth-of-type(2) {
+      @media (min-width: $l) {
+        width: calc(100% / 3);
+      }
+    }
+  }
+
+  &--33-66 {
+    > div:first-of-type {
+      @media (min-width: $l) {
+        width: calc(100% / 3);
+      }
+    }
+
+    > div:nth-of-type(2) {
+      @media (min-width: $l) {
+        width: calc(100% / 3 * 2);
+      }
+    }
+  }
+}
+
+.inner {
+  max-width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $xl + 40px) {
+    max-width: var(--grid-width);
+  }
+}

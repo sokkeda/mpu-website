@@ -1,0 +1,14 @@
+@use "../01-settings" as *;
+
+figcaption {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-top: var(--space-xs);
+
+  @media (max-width: $m) {
+    display: none;
+  }
+}
+

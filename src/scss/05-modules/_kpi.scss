@@ -1,0 +1,29 @@
+@use "../01-settings" as *;
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+
+  &__number {
+    font-size: 96px;
+    color: var(--color-secondary);
+    font-weight: 900;
+    position: relative;
+
+    @media (max-width: $l) {
+      font-size: 72px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--color-text);
+  }
+}

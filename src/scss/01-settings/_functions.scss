@@ -1,0 +1,15 @@
+@use "sass:math";
+
+@function strip-unit($value) {
+  @return math.div($value, $value * 0 + 1);
+}
+
+/**
+  Calculated a Rem value for a given Pixel Input
+  @arg {Int} $px = Pixel-Value without "px"-Unit
+  @return {String} = Calculated Rem-value
+ */
+@function remcalc($mdize) {
+  $remSize: math.div(strip-unit($mdize), 16);
+  @return #{$remSize}rem;
+}

@@ -1,0 +1,76 @@
+@use "../01-settings" as *;
+
+.header {
+  width: 100%;
+  padding: var(--space-s) 0;
+  background: var(--color-white);
+  z-index: 10;
+
+  @media (min-width: $l) {
+    position: fixed;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+
+    &:before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: calc(100% + 16px);
+      top: 8px;
+      border-radius: 50%;
+      background: var(--color-green-light);
+      z-index: -1;
+    }
+
+    &:after {
+      content: '';
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 100%;
+      top: 8px;
+      border-radius: 50%;
+      border: 2px solid var(--color-secondary);
+      z-index: -1;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      padding-right: 6px;
+      font-weight: bold;
+      color: var(--color-primary);
+      background: var(--color-white);
+
+      position: relative;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--color-secondary);
+      background: var(--color-white);
+      width: max-content;
+    }
+  }
+
+  &__actions {
+    display: none;
+
+    @media (min-width: $l) {
+      display: flex;
+    }
+  }
+}

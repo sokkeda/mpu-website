@@ -1,0 +1,43 @@
+@use "../01-settings" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  position: relative;
+
+  &__success {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  fieldset {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  input:not(.button),
+  textarea {
+    border-radius: var(--space-xs);
+    padding: var(--space-xs) var(--space-s);
+    line-height: inherit;
+    border: none;
+
+    color: var(--color-text);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    min-height: calc(20px * 1.5 * 4);
+  }
+}

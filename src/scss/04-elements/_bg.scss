@@ -1,0 +1,17 @@
+@use "../01-settings" as *;
+
+.bg {
+  &-green {
+    background-color: var(--color-green);
+  }
+  &-green-light {
+    background-color: var(--color-green-light);
+  }
+  &-petrol {
+    background-color: var(--color-petrol);
+  }
+  &-blue {
+    background-color: var(--color-blue);
+  }
+}
+

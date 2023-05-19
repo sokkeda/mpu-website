@@ -1,0 +1,8 @@
+@use "../01-settings" as *;
+
+.section--topics {
+  .bubble:after {
+    right: -100px;
+    bottom: -50px;
+  }
+}

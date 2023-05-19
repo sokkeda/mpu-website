@@ -1,0 +1,39 @@
+{
+  "name": "mpu-sokopp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "dev:reload": "webpack --env enableLiveReload",
+    "build": "webpack --mode production"
+  },
+  "author": "Daniel Sokopp",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "glob": "^8.0.3",
+    "mini-css-extract-plugin": "^2.6.0",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^7.0.1",
+    "prettier": "^2.6.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

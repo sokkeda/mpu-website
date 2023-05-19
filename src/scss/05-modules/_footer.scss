@@ -1,0 +1,10 @@
+@use "../01-settings" as *;
+
+.footer {
+  color: var(--color-primary);
+  font-weight: bold;
+
+  .container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,69 @@
+@use "../01-settings" as *;
+
+.hero {
+  padding: 0 !important;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--space-m);
+
+  @media (min-width: $l) {
+    margin-bottom: var(--space-l);
+  }
+
+  .container {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $l) {
+      justify-content: flex-start;
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    //background: var(--gradient-blue);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.9);
+    padding: var(--space-m);
+    border-radius: var(--space-xs);
+
+    @media (min-width: $l) {
+      max-width: calc(75% - #{var(--grid-gap-width)} / 2);
+    }
+    @media (min-width: $xl) {
+      max-width: calc(50% - #{var(--grid-gap-width)} / 2);
+    }
+  }
+
+  &__title {
+    order: 2;
+  }
+
+  &__subtitle {
+    order: 1;
+  }
+
+  &__text {
+    order: 3;
+  }
+
+  &__button {
+    order: 4;
+
+    margin-top: var(--space-s);
+  }
+}
