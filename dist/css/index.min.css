@@ -973,6 +973,7 @@ ul {
 }
 .footer .container {
   justify-content: center;
+  align-items: center;
 }
 
 .kpi {
