@@ -971,7 +971,7 @@ ul {
   padding-right: 0;
 }
 .footer .container {
-  align-items: center;
+  justify-content: center;
 }
 
 .kpi {
