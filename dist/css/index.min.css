@@ -985,6 +985,7 @@ ul {
 @media (min-width: 1024px) {
   .kpi {
     background: var(--color-green-light);
+    padding: var(--space-m);
   }
 }
 .kpi__number {
