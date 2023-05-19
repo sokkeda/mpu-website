@@ -15,3 +15,12 @@
   }
 }
 
+[class^="bg-"] {
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+
+  .inner {
+    max-width: 100%;
+  }
+}
+

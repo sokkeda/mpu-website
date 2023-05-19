@@ -7,8 +7,10 @@
   align-content: center;
   justify-content: center;
   text-align: center;
-  padding-top: var(--space-m);
-  padding-bottom: var(--space-m);
+
+  @media (min-width: $l) {
+    background: var(--color-green-light);
+  }
 
   &__number {
     font-size: 96px;
@@ -19,11 +21,5 @@
     @media (max-width: $l) {
       font-size: 72px;
     }
-  }
-
-  &__text {
-    font-size: 20px;
-    line-height: 1.5;
-    color: var(--color-text);
   }
 }

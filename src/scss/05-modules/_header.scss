@@ -19,6 +19,7 @@
     flex-direction: column;
     position: relative;
     width: fit-content;
+    z-index: 1;
 
     &:before {
       content: '';
