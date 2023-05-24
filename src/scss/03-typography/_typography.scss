@@ -19,8 +19,8 @@ body {
   }
 
   > a, span, b, strong {
-    font-size: inherit;
-    line-height: inherit;
+    font-size: inherit !important;
+    line-height: inherit !important;
   }
 
   & + * {
