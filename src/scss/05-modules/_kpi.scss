@@ -11,6 +11,7 @@
   @media (min-width: $l) {
     background: var(--color-green-light);
     padding: var(--space-m);
+    border-radius: var(--space-xs);
   }
 
   &__number {
