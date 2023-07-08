@@ -12,3 +12,32 @@ figcaption {
   }
 }
 
+.image {
+  &__wrapper {
+    position: relative;
+
+    &:hover {
+      .image__flip {
+        opacity: 1;
+      }
+    }
+  }
+  &__flip {
+    opacity: 0;
+
+    transition: opacity 0.2s ease;
+    background: rgba(255,255,255,0.8);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+

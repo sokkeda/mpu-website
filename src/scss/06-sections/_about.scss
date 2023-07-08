@@ -11,6 +11,14 @@
     width: 480px;
     max-width: 100%;
     background-color: var(--color-green-light);
+
+    &__flip {
+      border-radius: 50%;
+      width: calc(100% - 8px);
+      height: calc(100% - 12px);
+      top: 4px;
+      left: 4px;
+    }
   }
 
   .bubble:after {

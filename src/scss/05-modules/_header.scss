@@ -72,6 +72,12 @@
 
     @media (min-width: $l) {
       display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    > a {
+      font-weight: 700;
     }
   }
 }
