@@ -47,6 +47,7 @@ a:not(.button) {
   font-size: 20px;
   line-height: 1.5;
   color: var(--color-secondary);
+  cursor: pointer;
 
   &:hover {
     color: var(--color-primary);
