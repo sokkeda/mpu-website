@@ -28,11 +28,17 @@ body {
   }
 
   & + .h1,
+  & + h1,
   & + .h2,
+  & + h2,
   & + .h3,
+  & + h3,
   & + .h4,
+  & + h4,
   & + .h5,
-  & + .h6 {
+  & + h5,
+  & + .h6,
+  & + h6 {
     margin-top: var(--space-m);
   }
 }
@@ -47,12 +53,12 @@ a:not(.button) {
   }
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
   color: var(--color-headlines);
   margin: 0;
 }
 
-.h1 {
+.h1, h1 {
   font-size: 64px;
   margin-bottom: var(--space-m);
   font-weight: bold;
@@ -64,11 +70,11 @@ a:not(.button) {
     font-size: 42px;
   }
   @media (max-width: $s) {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
-.h2 {
+.h2, h2 {
   font-size: 48px;
   margin-bottom: var(--space-m);
   font-weight: bold;
@@ -84,7 +90,7 @@ a:not(.button) {
   }
 }
 
-.h3 {
+.h3, h3 {
   font-size: 36px;
   margin-bottom: var(--space-m);
   font-weight: bold;
@@ -97,20 +103,21 @@ a:not(.button) {
   }
 }
 
-.h4 {
+.h4, h4 {
   font-size: 32px;
   margin-bottom: var(--space-s);
   color: var(--color-secondary);
+  font-weight: 700;
 
   @media (max-width: $m) {
     font-size: 28px;
   }
   @media (max-width: $s) {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
-.h5 {
+.h5, h5 {
   font-size: 24px;
   margin-bottom: var(--space-xs);
   color: var(--color-secondary);
@@ -125,7 +132,7 @@ a:not(.button) {
   }
 }
 
-.h6 {
+.h6, h6 {
   font-size: 20px;
   margin-bottom: var(--space-xs);
   color: var(--color-secondary);
@@ -160,3 +167,4 @@ strong {
     color: var(--color-white);
   }
 }
+

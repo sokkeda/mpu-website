@@ -7,7 +7,25 @@
   padding-right: 0;
 
   .container {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+
+    li {
+      list-style: none;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }

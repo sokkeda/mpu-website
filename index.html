@@ -10,10 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MPU Beratung Jennifer Sokopp</title>
   <link rel="alternate" hreflang="de" href="https://www.mpu-sokopp.de"/>
-  <link rel="stylesheet" href="./dist/css/index.min.css">
-  <link rel="icon" href="./src/assets/icons/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="./src/assets/icons/favicon.ico">
-  <link rel="shortcut icon" href="./src/assets/icons/favicon.ico" sizes="196x196">
+  <link rel="stylesheet" href="/dist/css/index.min.css">
+  <link rel="icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/src/assets/icons/favicon.ico">
+  <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" sizes="196x196">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,200;0,600;0,900;1,200;1,600&display=swap" rel="stylesheet">
@@ -30,10 +30,10 @@
 <body>
 <header class="header" role="banner">
   <div class="inner container">
-    <div class="logo">
+    <a href="/" aria-label="Startseite" class="logo">
       <span class="logo__title">MPU Beratung</span>
       <span class="logo__subtitle">Jennifer Sokopp</span>
-    </div>
+    </a>
     <div class="header__actions">
       <a href="tel:+4915127161509" aria-label="Telefon anrufen">+49 151 27161509</a>
       <a class="button" href="#contact" aria-label="Kontakt aufnehmen">Kontakt</a>
@@ -50,7 +50,7 @@
           <p>Sie müssen eine MPU wegen Drogen, Alkohol, Punkten oder Straftaten absolvieren und interessieren sich für die <b>Vorteile einer MPU-Vorbereitung</b>?</p>
           <p>Ich beantworte Ihre Fragen und begleite Sie auf diesem Weg mit <b>kompetenter Beratung</b>.</p>
         </div>
-        <a href="#contact" class="button hero__button" aria-label="Kontakt aufnehmen">Kontakt aufnehmen</a>
+        <a href="#kpi" class="hero__scrolldown scrolldown" aria-label="Kontakt aufnehmen">Kontakt aufnehmen</a>
       </div>
     </div>
   </section>
@@ -96,9 +96,9 @@
             <img class="image" src="./src/assets/images/portrait.png" alt="Jennifer Sokopp, MPU Beraterin" role="img" aria-label="Jennifer Sokopp, MPU Beraterin" title="Jennifer Sokopp, B.Sc., MPU Beraterin">
           </picture>
           <div class="image__flip">
-            <a class="button" href="tel:+4915127161509" aria-label="Telefon anrufen">Anruf</a>
-            <a class="button" href="https://wa.me/+49 151 27161509">Whatsapp Nachricht</a>
-            <a class="button" href="#contact" aria-label="Kontakt aufnehmen">Kontakt</a>
+            <a class="button" href="tel:+4915127161509" aria-label="Telefon anrufen">Anrufen</a>
+            <a class="button" href="https://wa.me/+49 151 27161509" aria-label="Whatsapp Nachricht senden">Whatsapp Nachricht schicken</a>
+            <a class="button" href="mailto:info@mpu-sokopp.de" aria-label="Email senden">E-Mail senden</a>
           </div>
         </figure>
       </div>
@@ -108,7 +108,7 @@
         <p>Dank meiner <b>Erfahrung in der Suchttherapie</b> und den <b>Abschlüssen als B.Sc. Psychologie an der <a href="https://www.fernuni-hagen.de/" target="_blank" title="Studium an der Fernuniversität Hagen">Fernuniversität Hagen</a> und B.Sc. Gesundheitspädagogik and der <a href="https://www.ph-freiburg.de/" target="_blank" title="Studium an der Pädagogischen Hochschule Freiburg">Pädagogischen Hochschule Freiburg</a></b> habe ich ein klares Bild von den Erwartungen der Psychologen in MPU Gutachten. Ich weiß, welche Aspekte von Bedeutung sind und <b>wie das Gutachten für sie positiv ausfällt</b>.</p>
         <p>Ein gemeinsames Arbeiten in einem <b>positiven Klima</b> ist für mich von großer Bedeutung. Dabei unterliege ich selbstverständlich der <b>Schweigepflicht</b> und behandle alles <b>streng vertraulich</b>.</p>
         <p>Ich berate gerne Sie bis hin zum <b>positiven Gutachten</b>.</p>
-        <p>Ich freue mich auf Ihre <a href="contact">Nachricht</a>, Ihren <a href="tel:+49 151 27161509">Anruf</a> oder Ihre <a href="https://wa.me/+49 151 27161509">Whatsapp Nachricht</a>!</p>
+        <p>Ich freue mich auf Ihre <a href="contact">Nachricht</a>, <a href="tel:+49 151 27161509">Anruf</a>, <a href="https://wa.me/+49 151 27161509">Whatsapp Nachricht</a> oder Ihre E-Mail an <a href="mailto:info@mpu-sokopp.de">info@mpu-sokopp.de</a>!</p>
       </div>
     </div>
   </section>
@@ -179,6 +179,9 @@
 </main>
 <footer class="footer bg-green-light">
   <div class="inner container">
+    <ul class="footer__menu">
+      <li><a href="/sites/datenschutz.html" aria-label="Datenschutz Erklärung">Datenschutz</a></li>
+    </ul>
     <p>Copyright © 2023 - Jennifer Sokopp</p>
   </div>
 </footer>
