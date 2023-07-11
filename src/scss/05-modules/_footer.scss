@@ -18,10 +18,12 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-xs);
+    align-items: center;
+    gap: var(--space-m);
 
     li {
       list-style: none;
+      margin: 0;
     }
   }
 
