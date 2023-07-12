@@ -64,7 +64,7 @@ module.exports = (env, argv) => {
           include: [`${contextPath}/fonts`],
           type: 'asset/resource',
           generator: {
-            filename: 'Fonts/[hash][ext][query]',
+            filename: 'fonts/[hash][ext][query]',
           },
         },
         // Styles
