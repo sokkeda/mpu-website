@@ -20,15 +20,6 @@
   <link rel="apple-touch-icon" href="favicon.ico">
   <link rel="shortcut icon" href="favicon.ico" sizes="196x196">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LWNFSSCTV3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LWNFSSCTV3');
-</script>
 <body>
 <header class="header" role="banner">
   <div class="inner container">
@@ -188,24 +179,6 @@
   </div>
 </footer>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function() {
-    emailjs.init('292WUCT9KsfrMXiFK');
-  })();
-</script>
-<script type="text/javascript">
-  window.onload = function() {
-    document.querySelector('.js-contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      emailjs.sendForm('service_cqf3xb5', 'template_ggpax1d', this)
-        .then(function() {
-          document.querySelector('.js-contact-form-success').classList.remove('hidden')
-          console.log('SUCCESS!');
-        }, function(error) {
-          console.log('FAILED...', error);
-        });
-    });
-  }
-</script>
+<script type="text/javascript" src="/dist/js/index.min.js"></script>
 </body>
 </html>
