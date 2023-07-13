@@ -33,4 +33,83 @@
       --bg-button: var(--color-secondary);
     }
   }
+
+  &--icon {
+    position: relative;
+    padding-right: calc(#{var(--space-m)} + #{var(--space-s)});
+
+    &:after {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      right: var(--space-s);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--external {
+    &:after {
+      background-image: var(--icon-external-white);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-external-green);
+      }
+    }
+  }
+
+  &--mail {
+    &:after {
+      background-image: var(--icon-mail-white);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-mail-green);
+      }
+    }
+  }
+
+  &--phone {
+    &:after {
+      background-image: var(--icon-phone-white);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-phone-green);
+      }
+    }
+  }
+
+  &--chat {
+    &:after {
+      background-image: var(--icon-chat-white);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-chat-green);
+      }
+    }
+  }
+
+  &--send {
+    &:after {
+      background-image: var(--icon-send-white);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-send-green);
+      }
+    }
+  }
+
 }

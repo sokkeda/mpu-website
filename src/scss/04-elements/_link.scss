@@ -1,0 +1,81 @@
+@use "../01-settings" as *;
+
+.link {
+  &--icon {
+    position: relative;
+    padding-left: var(--space-m);
+
+    &:after {
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--external {
+    &:after {
+      background-image: var(--icon-external-green);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-external-blue);
+      }
+    }
+  }
+
+  &--mail {
+    &:after {
+      background-image: var(--icon-mail-green);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-mail-blue);
+      }
+    }
+  }
+
+  &--phone {
+    &:after {
+      background-image: var(--icon-phone-green);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-phone-blue);
+      }
+    }
+  }
+
+  &--chat {
+    &:after {
+      background-image: var(--icon-chat-green);
+    }
+
+    &:hover {
+      &:after {
+        background-image: var(--icon-chat-blue);
+      }
+    }
+  }
+}
+
+p .link {
+  &--icon {
+    display: inline-flex;
+    padding-left: 22px;
+
+    &:after {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}

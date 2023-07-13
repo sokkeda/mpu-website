@@ -50,6 +50,21 @@
     .package__level {
       background-color: var(--color-secondary);
       color: var(--color-white);
+      padding-right: calc(#{var(--space-s)} + #{var(--space-xs)});
+
+      &:after {
+        content: '';
+        background-image: var(--icon-star-white);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        right: var(--space-xs);
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     @media (min-width: $l) {

@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 const glob = require('glob');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
@@ -96,8 +97,14 @@ module.exports = (env, argv) => {
           },
         },
         {
-          test: /\.mdx$/,
-          use: ['babel-loader', '@mdx-js/loader'],
+          test: /\.svg/,
+          use: {
+            loader: "svg-url-loader",
+            options: {
+              // make all svg images to work in IE
+              iesafe: true,
+            },
+          },
         },
       ],
     },
@@ -116,6 +123,12 @@ module.exports = (env, argv) => {
         },
       }),
       new CleanWebpackPlugin(),
+      new CopyPlugin({
+        patterns: [
+          { from: "assets/images", to: "images", force: true, noErrorOnMissing: true },
+          { from: "assets/icons", to: "icons", force: true, noErrorOnMissing: true },
+        ],
+      }),
       new ProgressBarPlugin(),
     ],
     watch: !isProduction,
