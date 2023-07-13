@@ -1000,7 +1000,7 @@ figcaption {
 }
 
 ul {
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-xs);
   padding-left: 20px;
 }
 
