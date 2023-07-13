@@ -60,12 +60,12 @@ a:not(.button) {
 }
 
 .h1, h1 {
-  font-size: 64px;
+  font-size: 56px;
   margin-bottom: var(--space-m);
   font-weight: bold;
 
   @media (max-width: $l) {
-    font-size: 56px;
+    font-size: 48px;
   }
   @media (max-width: $m) {
     font-size: 42px;
@@ -76,12 +76,12 @@ a:not(.button) {
 }
 
 .h2, h2 {
-  font-size: 48px;
+  font-size: 44px;
   margin-bottom: var(--space-m);
   font-weight: bold;
 
   @media (max-width: $l) {
-    font-size: 42px;
+    font-size: 38px;
   }
   @media (max-width: $m) {
     font-size: 36px;
@@ -92,7 +92,7 @@ a:not(.button) {
 }
 
 .h3, h3 {
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: var(--space-m);
   font-weight: bold;
 
@@ -105,7 +105,7 @@ a:not(.button) {
 }
 
 .h4, h4 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: var(--space-s);
   color: var(--color-secondary);
   font-weight: 700;

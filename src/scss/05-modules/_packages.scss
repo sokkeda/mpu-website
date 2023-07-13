@@ -1,0 +1,85 @@
+@use "../01-settings" as *;
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--grid-gap-width);
+
+  &__description {
+    width: 100%;
+    margin-bottom: var(--space-m);
+  }
+}
+
+.package {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  position: relative;
+
+  background: var(--color-blue-light);
+  padding: var(--space-s) var(--space-m) calc(48px + #{var(--space-m)} + #{var(--grid-gap-width)}) var(--space-m);
+  border-radius: var(--space-xs);
+  border-top-right-radius: 0;
+  border-top: 8px solid var(--color-blue-light);
+
+  @media (min-width: $l) {
+    width: calc((100% / 3) - (#{var(--grid-gap-width)} * 2 / 3));
+  }
+
+  &--basic {}
+
+  &--standard {
+    border-top: 8px solid var(--color-primary);
+
+    .package__level {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+
+    @media (min-width: $l) {
+      order: 3;
+    }
+  }
+
+  &--premium {
+    background-color: var(--color-green-light);
+    border-top: 8px solid var(--color-secondary);
+
+    .package__level {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+    }
+
+    @media (min-width: $l) {
+      order: 2;
+    }
+  }
+
+  &__level {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-101%);
+    background-color: var(--color-blue-light);
+    border-top-left-radius: var(--space-xs);
+    border-top-right-radius: var(--space-xs);
+    color: var(--color-primary);
+    padding: var(--space-xs);
+    font-size: remcalc(12);
+    font-weight: 700;
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: 0;
+  }
+
+  .button {
+    margin: 0;
+
+    position: absolute;
+    bottom: var(--space-m);
+  }
+}
